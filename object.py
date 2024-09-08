@@ -1,8 +1,14 @@
 class Person:
+    amount = 0
+    
     def __init__(self,name, age, id):
         self.name = name
         self.age = age
         self.id = id
+        Person.amount += 1
+        
+    def __del__(self):
+        Person.amount -= 1
         
     def helloWorld(self):
         print("Hello World")
@@ -27,3 +33,4 @@ x.helloWorld()
 # del x
 
 print(x)
+print(Person.amount)
