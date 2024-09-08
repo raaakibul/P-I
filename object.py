@@ -7,8 +7,11 @@ class Person:
     def helloWorld(self):
         print("Hello World")
         
-    def __del__(self):
-        print("Object deleted")
+    # def __del__(self):
+    #     print("Object deleted")
+        
+    def __str__(self):
+        return "Name :{}, Age :{}, Id :{}".format(self.name, self.age, self.id)
 
 x = Person("Mike", 22, 456)
 print(x.name, x.age, x.id)
@@ -20,4 +23,7 @@ print(y.name, y.age,y.id)
 
 x.helloWorld()
 
-del x
+# destructure
+# del x
+
+print(x)
