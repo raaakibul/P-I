@@ -16,7 +16,7 @@ class Person:
 class Worker(Person):
     
     def __init__(self, name, age, id, salary):
-        super(Worker, self).__init__(name, age, id, salary)
+        super(Worker, self).__init__(name, age, id)
         self.salary = salary       
     
     
@@ -25,5 +25,5 @@ class Worker(Person):
     
 worker1 = Worker("Henry", 40, 145, 3000)
 print(worker1)
-print(worker1.calc_yearly_salary()) 
+print(worker1.calc_yearly_salary(1200)) 
     
