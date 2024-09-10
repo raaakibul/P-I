@@ -17,9 +17,22 @@ class Vector:
     
 v1 = Vector(2,5)
 v2 = Vector(6,3)
+v3 = Vector(10,5)
+v4 = Vector(6,4)
 
 print(v1)
 print(v2)
 
-v3 = v1 + v2
+v_rsult = v1 + v2
+print(v_rsult)
+
+v_result2 = v1-v2
+print(v_result2)
+
 print(v3)
+print(v4)
+
+v_result3 = v3 + v4
+v_result4 = v3-v4
+print(v_result3)
+print(v_result4)
