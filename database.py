@@ -15,13 +15,21 @@ CREATE TABLE IF NOT EXISTS persons(
 
 cursor.execute("""
 INSERT INTO persons VALUES
-('Paul', 'Smith', 24).
+('Paul', 'Smith', 24),
 ('Ana', 'Isabela',25),
 ('John', 'Ball', 28)
 
 """)
 
+cursor.execute("""
 
+SELECT * FROM persons
+WHERE last_name = 'Smith'   
+""")
+
+
+rows = cursor.fetchall()
+print(rows)
 connection.commit()
 
 connection.close()
