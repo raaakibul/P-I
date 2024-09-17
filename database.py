@@ -10,7 +10,6 @@ CREATE TABLE IF NOT EXISTS persons(
     last_name TEXT,
     age INTEGER
 )
-
 """)
 
 cursor.execute("""
