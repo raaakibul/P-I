@@ -16,4 +16,5 @@ def factorial(x):
     else: 
         number = x * factorial(x-1)
         return number
-    
+result = factorial(8)
+print(result)
